@@ -1,28 +1,32 @@
 PODS:
   - Alamofire (5.4.3)
-  - ContentLoader (1.1.1)
+  - GoogleMaps (5.1.0):
+    - GoogleMaps/Maps (= 5.1.0)
+  - GoogleMaps/Base (5.1.0)
+  - GoogleMaps/Maps (5.1.0):
+    - GoogleMaps/Base
   - KFSwiftImageLoader (4.0.0)
   - SwiftSpinner (2.2.0)
 
 DEPENDENCIES:
   - Alamofire (~> 5.2)
-  - ContentLoader
+  - GoogleMaps (= 5.1.0)
   - KFSwiftImageLoader (~> 4.0)
   - SwiftSpinner
 
 SPEC REPOS:
   trunk:
     - Alamofire
-    - ContentLoader
+    - GoogleMaps
     - KFSwiftImageLoader
     - SwiftSpinner
 
 SPEC CHECKSUMS:
   Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
-  ContentLoader: b14db4449065be0fd2b8c77b65ff5e4a0a8c7f86
+  GoogleMaps: 086ae1dab659eaa7339bdb30fc88e2f44e7c597c
   KFSwiftImageLoader: f6edb1af1c9ed23906509d4db7e00edc1086228b
   SwiftSpinner: f9b59477fe107427f2b5b835497d6636fa167ede
 
-PODFILE CHECKSUM: d4f0efb87267f5708586f6472bf1c3e03a40869d
+PODFILE CHECKSUM: 16499681a816b226acd68ca241c060a3d184f23d
 
 COCOAPODS: 1.10.1

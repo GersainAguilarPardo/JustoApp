@@ -14,12 +14,15 @@
 		0023976326C832E40004ABE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0023971326C832E40004ABE4 /* Assets.xcassets */; };
 		0023976426C832E40004ABE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0023971426C832E40004ABE4 /* LaunchScreen.storyboard */; };
 		0023976526C832E40004ABE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0023971626C832E40004ABE4 /* Main.storyboard */; };
-		0023978526C832E40004ABE4 /* AppAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0023974D26C832E40004ABE4 /* AppAppearance.swift */; };
 		0023978726C832E40004ABE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0023974F26C832E40004ABE4 /* AppDelegate.swift */; };
 		0023978826C832E40004ABE4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0023975026C832E40004ABE4 /* SceneDelegate.swift */; };
 		0023982226C87C8D0004ABE4 /* ViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0023981F26C87C8D0004ABE4 /* ViewControllerViewModel.swift */; };
 		0023982326C87C8D0004ABE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0023982126C87C8D0004ABE4 /* ViewController.swift */; };
 		0023982A26C882970004ABE4 /* SingletonSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0023982926C882970004ABE4 /* SingletonSession.swift */; };
+		0023983826C895E50004ABE4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0023983726C895E50004ABE4 /* ProfileViewController.swift */; };
+		0023984026C895F70004ABE4 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0023983F26C895F70004ABE4 /* ProfileViewModel.swift */; };
+		0023985026C8BC790004ABE4 /* GeolocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0023984F26C8BC790004ABE4 /* GeolocationViewController.swift */; };
+		0023985526C8BCE90004ABE4 /* GeolocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0023985426C8BCE90004ABE4 /* GeolocationViewModel.swift */; };
 		3B519FE6A521F08F5FA6FA35 /* Pods_JustoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49BEE4BB273513BEBA22E4E2 /* Pods_JustoTests.framework */; };
 		DD8B8817310B301D242B1B9E /* Pods_Justo_JustoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15438F6EA1547054F797EF22 /* Pods_Justo_JustoUITests.framework */; };
 		EFAEBC10CF4FEF36750EDD06 /* Pods_Justo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0006A7611FF7C37D66232B76 /* Pods_Justo.framework */; };
@@ -56,7 +59,6 @@
 		0023971326C832E40004ABE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0023971526C832E40004ABE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0023971726C832E40004ABE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0023974D26C832E40004ABE4 /* AppAppearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppAppearance.swift; sourceTree = "<group>"; };
 		0023974F26C832E40004ABE4 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0023975026C832E40004ABE4 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0023979B26C833720004ABE4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -64,6 +66,10 @@
 		0023981F26C87C8D0004ABE4 /* ViewControllerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerViewModel.swift; sourceTree = "<group>"; };
 		0023982126C87C8D0004ABE4 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0023982926C882970004ABE4 /* SingletonSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonSession.swift; sourceTree = "<group>"; };
+		0023983726C895E50004ABE4 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		0023983F26C895F70004ABE4 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		0023984F26C8BC790004ABE4 /* GeolocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeolocationViewController.swift; sourceTree = "<group>"; };
+		0023985426C8BCE90004ABE4 /* GeolocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeolocationViewModel.swift; sourceTree = "<group>"; };
 		06D1E1A3D71E00752F8CB50F /* Pods-Justo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Justo.debug.xcconfig"; path = "Target Support Files/Pods-Justo/Pods-Justo.debug.xcconfig"; sourceTree = "<group>"; };
 		15438F6EA1547054F797EF22 /* Pods_Justo_JustoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Justo_JustoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		40D7BCD18EA66EF5364EE8F0 /* Pods-Justo-JustoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Justo-JustoUITests.release.xcconfig"; path = "Target Support Files/Pods-Justo-JustoUITests/Pods-Justo-JustoUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -209,7 +215,6 @@
 		0023974B26C832E40004ABE4 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				0023974D26C832E40004ABE4 /* AppAppearance.swift */,
 				0023974F26C832E40004ABE4 /* AppDelegate.swift */,
 				0023975026C832E40004ABE4 /* SceneDelegate.swift */,
 				0023981B26C87C2E0004ABE4 /* PrefixHeader.pch */,
@@ -220,6 +225,8 @@
 		0023981C26C87C8D0004ABE4 /* RandomUserScene */ = {
 			isa = PBXGroup;
 			children = (
+				0023983426C895B10004ABE4 /* RandomUserDataGoogleMaps */,
+				0023983126C895B10004ABE4 /* RandomUserDataProfile */,
 				0023981D26C87C8D0004ABE4 /* RandomUserData */,
 			);
 			path = RandomUserScene;
@@ -266,6 +273,56 @@
 			path = Singleton;
 			sourceTree = "<group>";
 		};
+		0023983126C895B10004ABE4 /* RandomUserDataProfile */ = {
+			isa = PBXGroup;
+			children = (
+				0023983226C895B10004ABE4 /* ViewModel */,
+				0023983326C895B10004ABE4 /* View */,
+			);
+			path = RandomUserDataProfile;
+			sourceTree = "<group>";
+		};
+		0023983226C895B10004ABE4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0023983F26C895F70004ABE4 /* ProfileViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0023983326C895B10004ABE4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0023983726C895E50004ABE4 /* ProfileViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0023983426C895B10004ABE4 /* RandomUserDataGoogleMaps */ = {
+			isa = PBXGroup;
+			children = (
+				0023983526C895B10004ABE4 /* ViewModel */,
+				0023983626C895B10004ABE4 /* View */,
+			);
+			path = RandomUserDataGoogleMaps;
+			sourceTree = "<group>";
+		};
+		0023983526C895B10004ABE4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0023985426C8BCE90004ABE4 /* GeolocationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0023983626C895B10004ABE4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0023984F26C8BC790004ABE4 /* GeolocationViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		89FAFA9DDC147D0CA400AD0A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -301,6 +358,7 @@
 				0023969426C82E020004ABE4 /* Frameworks */,
 				0023969526C82E020004ABE4 /* Resources */,
 				71312F063A6002422B82952E /* [CP] Embed Pods Frameworks */,
+				23892CF2F73ED466F6E4F323 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -339,6 +397,7 @@
 				002396B826C82E050004ABE4 /* Frameworks */,
 				002396B926C82E050004ABE4 /* Resources */,
 				02BE2669A2C033722A41D79F /* [CP] Embed Pods Frameworks */,
+				B61EE34A2468F1C4C5670A75 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -459,6 +518,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		23892CF2F73ED466F6E4F323 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Justo/Pods-Justo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Justo/Pods-Justo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Justo/Pods-Justo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		71312F063A6002422B82952E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -498,6 +574,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B61EE34A2468F1C4C5670A75 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Justo-JustoUITests/Pods-Justo-JustoUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Justo-JustoUITests/Pods-Justo-JustoUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Justo-JustoUITests/Pods-Justo-JustoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D3736C9BD0ABD1792FCD63E8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -530,10 +623,13 @@
 				0023982A26C882970004ABE4 /* SingletonSession.swift in Sources */,
 				0023978726C832E40004ABE4 /* AppDelegate.swift in Sources */,
 				0023982226C87C8D0004ABE4 /* ViewControllerViewModel.swift in Sources */,
-				0023978526C832E40004ABE4 /* AppAppearance.swift in Sources */,
+				0023984026C895F70004ABE4 /* ProfileViewModel.swift in Sources */,
+				0023985526C8BCE90004ABE4 /* GeolocationViewModel.swift in Sources */,
 				0023975426C832E40004ABE4 /* Justo.xcdatamodeld in Sources */,
 				0023982326C87C8D0004ABE4 /* ViewController.swift in Sources */,
+				0023983826C895E50004ABE4 /* ProfileViewController.swift in Sources */,
 				0023975126C832E40004ABE4 /* APIEndpoints.swift in Sources */,
+				0023985026C8BC790004ABE4 /* GeolocationViewController.swift in Sources */,
 				0023978826C832E40004ABE4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

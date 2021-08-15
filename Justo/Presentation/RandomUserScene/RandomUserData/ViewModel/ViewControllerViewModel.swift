@@ -10,12 +10,9 @@ import SwiftSpinner
 import MessageUI
 
 class ViewControllerViewModel: NSObject {
-
-    weak var lblDeveloperName: UILabel!
-    weak var lblDeveloperEmail: UILabel!
-    weak var lblDeveloperPhone: UILabel!
     
     weak var weakSelf :  UIViewController?
+    let underlineAttribute = [NSAttributedString.Key.underlineStyle: NSUnderlineStyle.thick.rawValue]
     
     private var apiWS : APIEndpoints?
     
@@ -24,29 +21,88 @@ class ViewControllerViewModel: NSObject {
         self.apiWS = APIEndpoints()
     }
     
+    /// This function have a local reference for ViewController `vc`.
+    ///
+    /// ```
+    /// createView() // Save the viewController that call the class
+    /// ```
+    ///
+    /// - Warning: The viewController is saved with weak reference.
+    /// - Parameter vc: The VC that is able to show alerts and other visual components.
+    /// - Returns: Nothing
     public func createView(_ vc: UIViewController){
+               
+        weakSelf = vc
+    }
+    
+    /// This function give the user name `name`.
+    ///
+    /// ```
+    /// getUSerName() // Return the developer name
+    /// ```
+    ///
+    /// - Warning: This method allways return the same value
+    /// - Parameter nothing: Nothis parameters need
+    /// - Returns: The developer name
+    func getUSerName() -> String {
+        return "Gersaín Aguilar Pardo"
+    }
+    
+    /// This function set the gesture and information for the label `lblDeveloperPhone`.
+    ///
+    /// ```
+    /// setFuncionalityLabelPhone() // Return nothing
+    /// ```
+    ///
+    /// - Warning: This method add gesture and underline that the label that you send in parameters
+    /// - Parameter UILabel: The UILabel that you pass in parameters
+    /// - Returns: Nothing
+    
+    func setFuncionalityLabelPhone(_ lblDeveloperPhone: UILabel){
         
-        lblDeveloperName.text   = "Gersaín Aguilar Pardo"
-        lblDeveloperEmail.text  = "gersain.aguilar.pardo@gmail.com"
         lblDeveloperPhone.text  = "+52 55 8425 0295"
         
-        let underlineAttribute = [NSAttributedString.Key.underlineStyle: NSUnderlineStyle.thick.rawValue]
-        let underlineAttributedString = NSAttributedString(string: "+52 55 8425 0295", attributes: underlineAttribute)
-        lblDeveloperPhone.attributedText = underlineAttributedString
         
-        let underlineAttributedStringEmail = NSAttributedString(string: "gersain.aguilar.pardo@gmail.com", attributes: underlineAttribute)
-        lblDeveloperEmail.attributedText = underlineAttributedStringEmail
+        let underlineAttributedString = NSAttributedString(string: "+52 55 8425 0295", attributes: underlineAttribute)
+        
+        lblDeveloperPhone.attributedText = underlineAttributedString
         
         let tapGesturePhone = UITapGestureRecognizer(target: self, action: #selector(handleTapPhone))
         tapGesturePhone.numberOfTapsRequired = 1
         lblDeveloperPhone.addGestureRecognizer(tapGesturePhone)
+    }
+    
+    /// This function set the gesture and information for the label `lblDeveloperEmail`.
+    ///
+    /// ```
+    /// lblDeveloperEmail() // Return nothing
+    /// ```
+    ///
+    /// - Warning: This method add gesture and underline that the label that you send in parameters
+    /// - Parameter UILabel: The UILabel that you pass in parameters
+    /// - Returns: Nothing
+    
+    func setFuncionalityLabelEmail(_ lblDeveloperEmail: UILabel){
+        
+        lblDeveloperEmail.text  = "gersain.aguilar.pardo@gmail.com"
+        
+        let underlineAttributedStringEmail = NSAttributedString(string: "gersain.aguilar.pardo@gmail.com", attributes: underlineAttribute)
+        lblDeveloperEmail.attributedText = underlineAttributedStringEmail
         
         let tapGestureEmail = UITapGestureRecognizer(target: self, action: #selector(handleTapEmail))
         tapGestureEmail.numberOfTapsRequired = 1
         lblDeveloperEmail.addGestureRecognizer(tapGestureEmail)
-        
-        weakSelf = vc
     }
+    
+    /// This function handle the event and call to developer number `sender`.
+    ///
+    /// ```
+    /// handleTapPhone() // Return nothing
+    /// ```
+    ///
+    /// - Warning: This method execute a call phone to developer number
+    /// - Parameter UITapGestureRecognizer: The sender that receive is the UIElement that handle the method
+    /// - Returns: Nothing
     
     @objc private func handleTapPhone(sender: UITapGestureRecognizer) {
         
@@ -75,6 +131,16 @@ class ViewControllerViewModel: NSObject {
         }
     }
     
+    /// This function handle the event to send a email to the developer.
+    ///
+    /// ```
+    /// handleTapEmail() // Return nothing
+    /// ```
+    ///
+    /// - Warning: This method start the MFMailComposeViewController for send a email to developer
+    /// - Parameter UITapGestureRecognizer: The sender that receive is the UIElement that handle the method
+    /// - Returns: Nothing
+    
     @objc private func handleTapEmail(sender: UITapGestureRecognizer) {
         
         print("Email")
@@ -99,7 +165,17 @@ class ViewControllerViewModel: NSObject {
             }
     }
     
-    public func getRandomUserDataViewModel(_ vc: ViewController){
+    /// This function start animation  for wait the process to download information and execute the WS to RandomAPI
+    ///
+    /// ```
+    /// getRandomUserDataViewModel() // Return nothing
+    /// ```
+    ///
+    /// - Warning: This method start the MFMailComposeViewController for send a email to developer
+    /// - Parameter Nothing: Not parameters needed
+    /// - Returns: Nothing
+    
+    public func getRandomUserDataViewModel(){
         
         SwiftSpinner.show("Downloading information...")
         

@@ -1,5 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-Justo-JustoUITests/Pods-Justo-JustoUITests-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
-${BUILT_PRODUCTS_DIR}/ContentLoader/ContentLoader.framework
 ${BUILT_PRODUCTS_DIR}/KFSwiftImageLoader/KFSwiftImageLoader.framework
 ${BUILT_PRODUCTS_DIR}/SwiftSpinner/SwiftSpinner.framework

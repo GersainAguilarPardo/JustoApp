@@ -10,6 +10,16 @@ import Alamofire
 
 class APIEndpoints : NSObject {
     
+    /// This function execute the POST for download the Random API information
+    ///
+    /// ```
+    /// getRandomUserData() // Return nothing
+    /// ```
+    ///
+    /// - Warning: This method can to the handle class with completion callback 
+    /// - Parameter completion: The completion block for handle the response to father class
+    /// - Returns: Nothing
+    
     func getRandomUserData(completion : @escaping (NSDictionary?, NSError?) -> ()){
         
         let utilityQueue = DispatchQueue.global(qos: .utility)
