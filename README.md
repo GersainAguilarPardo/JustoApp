@@ -8,7 +8,7 @@
 
 
 ## Features ##
-- [SpaceX API](https://api.spacex.land/graphql/)
+- [Random User API](https://randomuser.me/api/)
 
 
 ## Installation ##
@@ -30,14 +30,16 @@ $ pod init
 ```
 
 
-Open your podfile create and add support for Alamofire SDK
+Open your podfile create and add support for Alamofire SDK, KFSwiftImageLoader, SwiftSpinner and GoogleMaps
 
+```
+ pod 'Alamofire', '~> 5.2'
+ pod 'KFSwiftImageLoader', '~> 4.0'
+ pod 'SwiftSpinner'
+ pod 'GoogleMaps', '5.1.0'
+```
 
-pod 'Alamofire', '~> 5.2'
-
-
-For install the Alamofire SDK pod write in terminal
-
+For install all the SDK pod write in terminal
 
 ```
 $ pod install
