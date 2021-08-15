@@ -1,0 +1,893 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		002396B526C82E050004ABE4 /* JustoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002396B426C82E050004ABE4 /* JustoTests.swift */; };
+		002396C026C82E050004ABE4 /* JustoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002396BF26C82E050004ABE4 /* JustoUITests.swift */; };
+		0023975126C832E40004ABE4 /* APIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002396F026C832E40004ABE4 /* APIEndpoints.swift */; };
+		0023975426C832E40004ABE4 /* Justo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 002396F826C832E40004ABE4 /* Justo.xcdatamodeld */; };
+		0023976326C832E40004ABE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0023971326C832E40004ABE4 /* Assets.xcassets */; };
+		0023976426C832E40004ABE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0023971426C832E40004ABE4 /* LaunchScreen.storyboard */; };
+		0023976526C832E40004ABE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0023971626C832E40004ABE4 /* Main.storyboard */; };
+		0023978526C832E40004ABE4 /* AppAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0023974D26C832E40004ABE4 /* AppAppearance.swift */; };
+		0023978726C832E40004ABE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0023974F26C832E40004ABE4 /* AppDelegate.swift */; };
+		0023978826C832E40004ABE4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0023975026C832E40004ABE4 /* SceneDelegate.swift */; };
+		0023982226C87C8D0004ABE4 /* ViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0023981F26C87C8D0004ABE4 /* ViewControllerViewModel.swift */; };
+		0023982326C87C8D0004ABE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0023982126C87C8D0004ABE4 /* ViewController.swift */; };
+		0023982A26C882970004ABE4 /* SingletonSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0023982926C882970004ABE4 /* SingletonSession.swift */; };
+		3B519FE6A521F08F5FA6FA35 /* Pods_JustoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49BEE4BB273513BEBA22E4E2 /* Pods_JustoTests.framework */; };
+		DD8B8817310B301D242B1B9E /* Pods_Justo_JustoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15438F6EA1547054F797EF22 /* Pods_Justo_JustoUITests.framework */; };
+		EFAEBC10CF4FEF36750EDD06 /* Pods_Justo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0006A7611FF7C37D66232B76 /* Pods_Justo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		002396B126C82E050004ABE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0023968F26C82E020004ABE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0023969626C82E020004ABE4;
+			remoteInfo = Justo;
+		};
+		002396BC26C82E050004ABE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0023968F26C82E020004ABE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0023969626C82E020004ABE4;
+			remoteInfo = Justo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0006A7611FF7C37D66232B76 /* Pods_Justo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Justo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0023969726C82E020004ABE4 /* Justo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Justo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		002396B026C82E050004ABE4 /* JustoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JustoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		002396B426C82E050004ABE4 /* JustoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustoTests.swift; sourceTree = "<group>"; };
+		002396B626C82E050004ABE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		002396BB26C82E050004ABE4 /* JustoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JustoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		002396BF26C82E050004ABE4 /* JustoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustoUITests.swift; sourceTree = "<group>"; };
+		002396C126C82E050004ABE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		002396F026C832E40004ABE4 /* APIEndpoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIEndpoints.swift; sourceTree = "<group>"; };
+		002396F926C832E40004ABE4 /* Justo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Justo.xcdatamodel; sourceTree = "<group>"; };
+		0023971326C832E40004ABE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0023971526C832E40004ABE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0023971726C832E40004ABE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0023974D26C832E40004ABE4 /* AppAppearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppAppearance.swift; sourceTree = "<group>"; };
+		0023974F26C832E40004ABE4 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0023975026C832E40004ABE4 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0023979B26C833720004ABE4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0023981B26C87C2E0004ABE4 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		0023981F26C87C8D0004ABE4 /* ViewControllerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerViewModel.swift; sourceTree = "<group>"; };
+		0023982126C87C8D0004ABE4 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0023982926C882970004ABE4 /* SingletonSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonSession.swift; sourceTree = "<group>"; };
+		06D1E1A3D71E00752F8CB50F /* Pods-Justo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Justo.debug.xcconfig"; path = "Target Support Files/Pods-Justo/Pods-Justo.debug.xcconfig"; sourceTree = "<group>"; };
+		15438F6EA1547054F797EF22 /* Pods_Justo_JustoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Justo_JustoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40D7BCD18EA66EF5364EE8F0 /* Pods-Justo-JustoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Justo-JustoUITests.release.xcconfig"; path = "Target Support Files/Pods-Justo-JustoUITests/Pods-Justo-JustoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		49BEE4BB273513BEBA22E4E2 /* Pods_JustoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JustoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54B321EB43D26471141FD25D /* Pods-JustoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustoTests.debug.xcconfig"; path = "Target Support Files/Pods-JustoTests/Pods-JustoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7A1D948E02967879545448AE /* Pods-JustoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustoTests.release.xcconfig"; path = "Target Support Files/Pods-JustoTests/Pods-JustoTests.release.xcconfig"; sourceTree = "<group>"; };
+		9294A80F2C05AB0A4F496D33 /* Pods-Justo-JustoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Justo-JustoUITests.debug.xcconfig"; path = "Target Support Files/Pods-Justo-JustoUITests/Pods-Justo-JustoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A851365441A8D6437CF0CA96 /* Pods-Justo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Justo.release.xcconfig"; path = "Target Support Files/Pods-Justo/Pods-Justo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0023969426C82E020004ABE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFAEBC10CF4FEF36750EDD06 /* Pods_Justo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		002396AD26C82E050004ABE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B519FE6A521F08F5FA6FA35 /* Pods_JustoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		002396B826C82E050004ABE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD8B8817310B301D242B1B9E /* Pods_Justo_JustoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0023968E26C82E020004ABE4 = {
+			isa = PBXGroup;
+			children = (
+				0023969926C82E020004ABE4 /* Justo */,
+				002396B326C82E050004ABE4 /* JustoTests */,
+				002396BE26C82E050004ABE4 /* JustoUITests */,
+				0023969826C82E020004ABE4 /* Products */,
+				89FAFA9DDC147D0CA400AD0A /* Pods */,
+				A6E427A22E73CCAE2E128FCA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0023969826C82E020004ABE4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0023969726C82E020004ABE4 /* Justo.app */,
+				002396B026C82E050004ABE4 /* JustoTests.xctest */,
+				002396BB26C82E050004ABE4 /* JustoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0023969926C82E020004ABE4 /* Justo */ = {
+			isa = PBXGroup;
+			children = (
+				0023982726C882820004ABE4 /* Common */,
+				0023974B26C832E40004ABE4 /* Application */,
+				002396EE26C832E40004ABE4 /* Data */,
+				0023971926C832E40004ABE4 /* Presentation */,
+				0023971226C832E40004ABE4 /* Resources */,
+			);
+			path = Justo;
+			sourceTree = "<group>";
+		};
+		002396B326C82E050004ABE4 /* JustoTests */ = {
+			isa = PBXGroup;
+			children = (
+				002396B426C82E050004ABE4 /* JustoTests.swift */,
+				002396B626C82E050004ABE4 /* Info.plist */,
+			);
+			path = JustoTests;
+			sourceTree = "<group>";
+		};
+		002396BE26C82E050004ABE4 /* JustoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				002396BF26C82E050004ABE4 /* JustoUITests.swift */,
+				002396C126C82E050004ABE4 /* Info.plist */,
+			);
+			path = JustoUITests;
+			sourceTree = "<group>";
+		};
+		002396EE26C832E40004ABE4 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				002396EF26C832E40004ABE4 /* Network */,
+				002396F526C832E40004ABE4 /* PersistentStorages */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		002396EF26C832E40004ABE4 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				002396F026C832E40004ABE4 /* APIEndpoints.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		002396F526C832E40004ABE4 /* PersistentStorages */ = {
+			isa = PBXGroup;
+			children = (
+				002396F726C832E40004ABE4 /* CoreDataStorage */,
+			);
+			path = PersistentStorages;
+			sourceTree = "<group>";
+		};
+		002396F726C832E40004ABE4 /* CoreDataStorage */ = {
+			isa = PBXGroup;
+			children = (
+				002396F826C832E40004ABE4 /* Justo.xcdatamodeld */,
+			);
+			path = CoreDataStorage;
+			sourceTree = "<group>";
+		};
+		0023971226C832E40004ABE4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0023979B26C833720004ABE4 /* Info.plist */,
+				0023971326C832E40004ABE4 /* Assets.xcassets */,
+				0023971426C832E40004ABE4 /* LaunchScreen.storyboard */,
+				0023971626C832E40004ABE4 /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0023971926C832E40004ABE4 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				0023981C26C87C8D0004ABE4 /* RandomUserScene */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		0023974B26C832E40004ABE4 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				0023974D26C832E40004ABE4 /* AppAppearance.swift */,
+				0023974F26C832E40004ABE4 /* AppDelegate.swift */,
+				0023975026C832E40004ABE4 /* SceneDelegate.swift */,
+				0023981B26C87C2E0004ABE4 /* PrefixHeader.pch */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		0023981C26C87C8D0004ABE4 /* RandomUserScene */ = {
+			isa = PBXGroup;
+			children = (
+				0023981D26C87C8D0004ABE4 /* RandomUserData */,
+			);
+			path = RandomUserScene;
+			sourceTree = "<group>";
+		};
+		0023981D26C87C8D0004ABE4 /* RandomUserData */ = {
+			isa = PBXGroup;
+			children = (
+				0023981E26C87C8D0004ABE4 /* ViewModel */,
+				0023982026C87C8D0004ABE4 /* View */,
+			);
+			path = RandomUserData;
+			sourceTree = "<group>";
+		};
+		0023981E26C87C8D0004ABE4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0023981F26C87C8D0004ABE4 /* ViewControllerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0023982026C87C8D0004ABE4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0023982126C87C8D0004ABE4 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0023982726C882820004ABE4 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				0023982826C882820004ABE4 /* Singleton */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		0023982826C882820004ABE4 /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				0023982926C882970004ABE4 /* SingletonSession.swift */,
+			);
+			path = Singleton;
+			sourceTree = "<group>";
+		};
+		89FAFA9DDC147D0CA400AD0A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				06D1E1A3D71E00752F8CB50F /* Pods-Justo.debug.xcconfig */,
+				A851365441A8D6437CF0CA96 /* Pods-Justo.release.xcconfig */,
+				9294A80F2C05AB0A4F496D33 /* Pods-Justo-JustoUITests.debug.xcconfig */,
+				40D7BCD18EA66EF5364EE8F0 /* Pods-Justo-JustoUITests.release.xcconfig */,
+				54B321EB43D26471141FD25D /* Pods-JustoTests.debug.xcconfig */,
+				7A1D948E02967879545448AE /* Pods-JustoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A6E427A22E73CCAE2E128FCA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0006A7611FF7C37D66232B76 /* Pods_Justo.framework */,
+				15438F6EA1547054F797EF22 /* Pods_Justo_JustoUITests.framework */,
+				49BEE4BB273513BEBA22E4E2 /* Pods_JustoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0023969626C82E020004ABE4 /* Justo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 002396C426C82E050004ABE4 /* Build configuration list for PBXNativeTarget "Justo" */;
+			buildPhases = (
+				950C8CC127A9269C76FBE67F /* [CP] Check Pods Manifest.lock */,
+				0023969326C82E020004ABE4 /* Sources */,
+				0023969426C82E020004ABE4 /* Frameworks */,
+				0023969526C82E020004ABE4 /* Resources */,
+				71312F063A6002422B82952E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Justo;
+			productName = Justo;
+			productReference = 0023969726C82E020004ABE4 /* Justo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		002396AF26C82E050004ABE4 /* JustoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 002396C726C82E050004ABE4 /* Build configuration list for PBXNativeTarget "JustoTests" */;
+			buildPhases = (
+				0C6B164776C5A2C1E9FA6164 /* [CP] Check Pods Manifest.lock */,
+				002396AC26C82E050004ABE4 /* Sources */,
+				002396AD26C82E050004ABE4 /* Frameworks */,
+				002396AE26C82E050004ABE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				002396B226C82E050004ABE4 /* PBXTargetDependency */,
+			);
+			name = JustoTests;
+			productName = JustoTests;
+			productReference = 002396B026C82E050004ABE4 /* JustoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		002396BA26C82E050004ABE4 /* JustoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 002396CA26C82E050004ABE4 /* Build configuration list for PBXNativeTarget "JustoUITests" */;
+			buildPhases = (
+				D3736C9BD0ABD1792FCD63E8 /* [CP] Check Pods Manifest.lock */,
+				002396B726C82E050004ABE4 /* Sources */,
+				002396B826C82E050004ABE4 /* Frameworks */,
+				002396B926C82E050004ABE4 /* Resources */,
+				02BE2669A2C033722A41D79F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				002396BD26C82E050004ABE4 /* PBXTargetDependency */,
+			);
+			name = JustoUITests;
+			productName = JustoUITests;
+			productReference = 002396BB26C82E050004ABE4 /* JustoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0023968F26C82E020004ABE4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					0023969626C82E020004ABE4 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					002396AF26C82E050004ABE4 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 0023969626C82E020004ABE4;
+					};
+					002396BA26C82E050004ABE4 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 0023969626C82E020004ABE4;
+					};
+				};
+			};
+			buildConfigurationList = 0023969226C82E020004ABE4 /* Build configuration list for PBXProject "Justo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0023968E26C82E020004ABE4;
+			productRefGroup = 0023969826C82E020004ABE4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0023969626C82E020004ABE4 /* Justo */,
+				002396AF26C82E050004ABE4 /* JustoTests */,
+				002396BA26C82E050004ABE4 /* JustoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0023969526C82E020004ABE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0023976526C832E40004ABE4 /* Main.storyboard in Resources */,
+				0023976426C832E40004ABE4 /* LaunchScreen.storyboard in Resources */,
+				0023976326C832E40004ABE4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		002396AE26C82E050004ABE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		002396B926C82E050004ABE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02BE2669A2C033722A41D79F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Justo-JustoUITests/Pods-Justo-JustoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Justo-JustoUITests/Pods-Justo-JustoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Justo-JustoUITests/Pods-Justo-JustoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0C6B164776C5A2C1E9FA6164 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JustoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71312F063A6002422B82952E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Justo/Pods-Justo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Justo/Pods-Justo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Justo/Pods-Justo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		950C8CC127A9269C76FBE67F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Justo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3736C9BD0ABD1792FCD63E8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Justo-JustoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0023969326C82E020004ABE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0023982A26C882970004ABE4 /* SingletonSession.swift in Sources */,
+				0023978726C832E40004ABE4 /* AppDelegate.swift in Sources */,
+				0023982226C87C8D0004ABE4 /* ViewControllerViewModel.swift in Sources */,
+				0023978526C832E40004ABE4 /* AppAppearance.swift in Sources */,
+				0023975426C832E40004ABE4 /* Justo.xcdatamodeld in Sources */,
+				0023982326C87C8D0004ABE4 /* ViewController.swift in Sources */,
+				0023975126C832E40004ABE4 /* APIEndpoints.swift in Sources */,
+				0023978826C832E40004ABE4 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		002396AC26C82E050004ABE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				002396B526C82E050004ABE4 /* JustoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		002396B726C82E050004ABE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				002396C026C82E050004ABE4 /* JustoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		002396B226C82E050004ABE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0023969626C82E020004ABE4 /* Justo */;
+			targetProxy = 002396B126C82E050004ABE4 /* PBXContainerItemProxy */;
+		};
+		002396BD26C82E050004ABE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0023969626C82E020004ABE4 /* Justo */;
+			targetProxy = 002396BC26C82E050004ABE4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0023971426C832E40004ABE4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0023971526C832E40004ABE4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		0023971626C832E40004ABE4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0023971726C832E40004ABE4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		002396C226C82E050004ABE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		002396C326C82E050004ABE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		002396C526C82E050004ABE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06D1E1A3D71E00752F8CB50F /* Pods-Justo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9KHKGBGES2;
+				INFOPLIST_FILE = Justo/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.applicationJustoApp.Justo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		002396C626C82E050004ABE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A851365441A8D6437CF0CA96 /* Pods-Justo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9KHKGBGES2;
+				INFOPLIST_FILE = Justo/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.applicationJustoApp.Justo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		002396C826C82E050004ABE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54B321EB43D26471141FD25D /* Pods-JustoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9KHKGBGES2;
+				INFOPLIST_FILE = JustoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.applicationJustoApp.JustoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Justo.app/Justo";
+			};
+			name = Debug;
+		};
+		002396C926C82E050004ABE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A1D948E02967879545448AE /* Pods-JustoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9KHKGBGES2;
+				INFOPLIST_FILE = JustoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.applicationJustoApp.JustoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Justo.app/Justo";
+			};
+			name = Release;
+		};
+		002396CB26C82E050004ABE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9294A80F2C05AB0A4F496D33 /* Pods-Justo-JustoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9KHKGBGES2;
+				INFOPLIST_FILE = JustoUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.applicationJustoApp.JustoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Justo;
+			};
+			name = Debug;
+		};
+		002396CC26C82E050004ABE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40D7BCD18EA66EF5364EE8F0 /* Pods-Justo-JustoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9KHKGBGES2;
+				INFOPLIST_FILE = JustoUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.applicationJustoApp.JustoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Justo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0023969226C82E020004ABE4 /* Build configuration list for PBXProject "Justo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				002396C226C82E050004ABE4 /* Debug */,
+				002396C326C82E050004ABE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		002396C426C82E050004ABE4 /* Build configuration list for PBXNativeTarget "Justo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				002396C526C82E050004ABE4 /* Debug */,
+				002396C626C82E050004ABE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		002396C726C82E050004ABE4 /* Build configuration list for PBXNativeTarget "JustoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				002396C826C82E050004ABE4 /* Debug */,
+				002396C926C82E050004ABE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		002396CA26C82E050004ABE4 /* Build configuration list for PBXNativeTarget "JustoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				002396CB26C82E050004ABE4 /* Debug */,
+				002396CC26C82E050004ABE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		002396F826C832E40004ABE4 /* Justo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				002396F926C832E40004ABE4 /* Justo.xcdatamodel */,
+			);
+			currentVersion = 002396F926C832E40004ABE4 /* Justo.xcdatamodel */;
+			path = Justo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 0023968F26C82E020004ABE4 /* Project object */;
+}

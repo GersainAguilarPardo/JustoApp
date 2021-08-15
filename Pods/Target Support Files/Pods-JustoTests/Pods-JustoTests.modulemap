@@ -1,0 +1,6 @@
+framework module Pods_JustoTests {
+  umbrella header "Pods-JustoTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
