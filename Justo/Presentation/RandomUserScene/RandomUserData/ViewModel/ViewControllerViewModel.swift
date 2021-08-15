@@ -10,12 +10,9 @@ import SwiftSpinner
 import MessageUI
 
 class ViewControllerViewModel: NSObject {
-
-    weak var lblDeveloperName: UILabel!
-    weak var lblDeveloperEmail: UILabel!
-    weak var lblDeveloperPhone: UILabel!
     
     weak var weakSelf :  UIViewController?
+    let underlineAttribute = [NSAttributedString.Key.underlineStyle: NSUnderlineStyle.thick.rawValue]
     
     private var apiWS : APIEndpoints?
     
@@ -25,27 +22,38 @@ class ViewControllerViewModel: NSObject {
     }
     
     public func createView(_ vc: UIViewController){
+               
+        weakSelf = vc
+    }
+    
+    func getUSerName() -> String {
+        return "Gersaín Aguilar Pardo"
+    }
+    
+    func setFuncionalityLabelPhone(_ lblDeveloperPhone: UILabel){
         
-        lblDeveloperName.text   = "Gersaín Aguilar Pardo"
-        lblDeveloperEmail.text  = "gersain.aguilar.pardo@gmail.com"
         lblDeveloperPhone.text  = "+52 55 8425 0295"
         
-        let underlineAttribute = [NSAttributedString.Key.underlineStyle: NSUnderlineStyle.thick.rawValue]
-        let underlineAttributedString = NSAttributedString(string: "+52 55 8425 0295", attributes: underlineAttribute)
-        lblDeveloperPhone.attributedText = underlineAttributedString
         
-        let underlineAttributedStringEmail = NSAttributedString(string: "gersain.aguilar.pardo@gmail.com", attributes: underlineAttribute)
-        lblDeveloperEmail.attributedText = underlineAttributedStringEmail
+        let underlineAttributedString = NSAttributedString(string: "+52 55 8425 0295", attributes: underlineAttribute)
+        
+        lblDeveloperPhone.attributedText = underlineAttributedString
         
         let tapGesturePhone = UITapGestureRecognizer(target: self, action: #selector(handleTapPhone))
         tapGesturePhone.numberOfTapsRequired = 1
         lblDeveloperPhone.addGestureRecognizer(tapGesturePhone)
+    }
+    
+    func setFuncionalityLabelEmail(_ lblDeveloperEmail: UILabel){
+        
+        lblDeveloperEmail.text  = "gersain.aguilar.pardo@gmail.com"
+        
+        let underlineAttributedStringEmail = NSAttributedString(string: "gersain.aguilar.pardo@gmail.com", attributes: underlineAttribute)
+        lblDeveloperEmail.attributedText = underlineAttributedStringEmail
         
         let tapGestureEmail = UITapGestureRecognizer(target: self, action: #selector(handleTapEmail))
         tapGestureEmail.numberOfTapsRequired = 1
         lblDeveloperEmail.addGestureRecognizer(tapGestureEmail)
-        
-        weakSelf = vc
     }
     
     @objc private func handleTapPhone(sender: UITapGestureRecognizer) {

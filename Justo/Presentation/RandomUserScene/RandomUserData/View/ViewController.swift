@@ -21,11 +21,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        viewModel.lblDeveloperEmail = lblDeveloperEmail
-        viewModel.lblDeveloperPhone = lblDeveloperPhone
-        viewModel.lblDeveloperName = lblDeveloperName
-        
         viewModel.createView(self)
+        
+        lblDeveloperName.text = viewModel.getUSerName()
+        
+        viewModel.setFuncionalityLabelEmail(lblDeveloperEmail)
+        viewModel.setFuncionalityLabelPhone(lblDeveloperPhone)
     }
     
     
