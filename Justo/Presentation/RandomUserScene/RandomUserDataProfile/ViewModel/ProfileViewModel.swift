@@ -17,6 +17,16 @@ class ProfileViewModel: NSObject {
     var latLong         = ""
     var imageURL        = ""
     
+    /// This function generate the information data for UIElements
+    ///
+    /// ```
+    /// generateData() // Return nothing
+    /// ```
+    ///
+    /// - Warning: This method generate all the information for UI Elements
+    /// - Parameter Nothing: Not parameters needed
+    /// - Returns: Nothing
+    
     func generateData(){
         
         let userNameData = SingletonSession.shared().userRandomData["name"] as! NSDictionary
@@ -46,6 +56,16 @@ class ProfileViewModel: NSObject {
         
         latLong =  "Random lat,long: (\(latLongData["latitude"] ?? ""),\(latLongData["longitude"] ?? ""))"
     }
+    
+    /// This function load the profile picture
+    ///
+    /// ```
+    /// loadImage() // Return nothing
+    /// ```
+    ///
+    /// - Warning: This method generate all the information for UI Elements
+    /// - Parameter UIImageView: Is neccesary to send a UIImageView to show the Image information
+    /// - Returns: Nothing
     
     func loadImage(_ imgProfilePicture: UIImageView){
         

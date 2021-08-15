@@ -8,7 +8,6 @@
 import UIKit
 
 class ViewController: UIViewController {
-
     
     @IBOutlet weak var lblDeveloperName: UILabel!
     @IBOutlet weak var lblDeveloperEmail: UILabel!
@@ -40,9 +39,18 @@ class ViewController: UIViewController {
         }
     }
     
+    /// This function handle the ws method in ViewModel `subject`.
+    ///
+    /// ```
+    /// callToGetRandomUserData // Execute viewmodel method for handle the WS method
+    /// ```
+    ///
+    /// - Warning: Nothing.
+    /// - Parameter nothing: Not parameters need.
+    /// - Returns: Nothing
     func callToGetRandomUserData(){
         
-        viewModel.getRandomUserDataViewModel(self)
+        viewModel.getRandomUserDataViewModel()
     }
 }
 

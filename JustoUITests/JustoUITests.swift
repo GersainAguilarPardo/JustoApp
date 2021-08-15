@@ -27,6 +27,9 @@ class JustoUITests: XCTestCase {
         let app = XCUIApplication()
         app.launch()
 
+        XCUIApplication().tabBars["Tab Bar"].buttons["Perfil"].tap()
+        XCUIApplication().tabBars["Tab Bar"].buttons["Mapa"].tap()
+        
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }

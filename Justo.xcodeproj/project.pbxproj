@@ -14,7 +14,6 @@
 		0023976326C832E40004ABE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0023971326C832E40004ABE4 /* Assets.xcassets */; };
 		0023976426C832E40004ABE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0023971426C832E40004ABE4 /* LaunchScreen.storyboard */; };
 		0023976526C832E40004ABE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0023971626C832E40004ABE4 /* Main.storyboard */; };
-		0023978526C832E40004ABE4 /* AppAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0023974D26C832E40004ABE4 /* AppAppearance.swift */; };
 		0023978726C832E40004ABE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0023974F26C832E40004ABE4 /* AppDelegate.swift */; };
 		0023978826C832E40004ABE4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0023975026C832E40004ABE4 /* SceneDelegate.swift */; };
 		0023982226C87C8D0004ABE4 /* ViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0023981F26C87C8D0004ABE4 /* ViewControllerViewModel.swift */; };
@@ -60,7 +59,6 @@
 		0023971326C832E40004ABE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0023971526C832E40004ABE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0023971726C832E40004ABE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0023974D26C832E40004ABE4 /* AppAppearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppAppearance.swift; sourceTree = "<group>"; };
 		0023974F26C832E40004ABE4 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0023975026C832E40004ABE4 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0023979B26C833720004ABE4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -217,7 +215,6 @@
 		0023974B26C832E40004ABE4 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				0023974D26C832E40004ABE4 /* AppAppearance.swift */,
 				0023974F26C832E40004ABE4 /* AppDelegate.swift */,
 				0023975026C832E40004ABE4 /* SceneDelegate.swift */,
 				0023981B26C87C2E0004ABE4 /* PrefixHeader.pch */,
@@ -626,7 +623,6 @@
 				0023982A26C882970004ABE4 /* SingletonSession.swift in Sources */,
 				0023978726C832E40004ABE4 /* AppDelegate.swift in Sources */,
 				0023982226C87C8D0004ABE4 /* ViewControllerViewModel.swift in Sources */,
-				0023978526C832E40004ABE4 /* AppAppearance.swift in Sources */,
 				0023984026C895F70004ABE4 /* ProfileViewModel.swift in Sources */,
 				0023985526C8BCE90004ABE4 /* GeolocationViewModel.swift in Sources */,
 				0023975426C832E40004ABE4 /* Justo.xcdatamodeld in Sources */,

@@ -11,7 +11,7 @@ target 'Justo' do
   # Pods for Justo
   pod 'Alamofire', '~> 5.2'
   pod 'KFSwiftImageLoader', '~> 4.0'
-  pod "SwiftSpinner"
+  pod 'SwiftSpinner'
   pod 'GoogleMaps', '5.1.0'
   
   target 'JustoTests' do
